@@ -1,0 +1,43 @@
+/* 1. Light gray (#F0F0F0, #F5F5F5) */
+/* 2. Ghost white  (#F3F4F6, #F4F5F9, #F5F5F7) */
+
+:root {
+  --background-color: #F0F0F0;
+  --text-primary: #2C3A47
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  font-family: var(--font-montserrat);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media(max-width: 1023px) {
+  html {
+    font-size: 93%;
+  }
+}
+
+body {
+  color: var(--text-primary);
+  background: var(--background-color);
+}
+
+button, input {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--text-primary);
+}
